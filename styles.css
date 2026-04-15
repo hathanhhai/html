@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f1f3f5;
+}
+
+/* HEADER */
+.header {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header p {
+  margin-top: 5px;
+}
+
+/* MENU */
+.nav {
+  background: #34495e;
+  text-align: center;
+  padding: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #f1c40f;
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* LEFT giống ảnh */
+.left {
+  width: 30%;
+}
+
+/* RIGHT giống ảnh */
+.right {
+  width: 70%;
+}
+
+/* CARD */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease;
+}
+
+/* TITLE */
+.title {
+  border-left: 5px solid #16a085;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+/* GRID ẢNH */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.grid img:hover {
+  transform: scale(1.08);
+}
+
+/* LIST */
+ul {
+  padding-left: 18px;
+}
+
+/* FOOTER */
+.footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* FLOWER */
+.flower {
+  position: fixed;
+  top: -10px;
+  font-size: 18px;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+}
+.card-video {
+  height: 455px;
+}
+
+.card-video video {
+  width: 100%;
+  height: 85%;
+  display: block;
+  object-fit: cover;
+}
