@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - PHẠM NGUYỄN CHÂU KHÁNH</title>
+    <style>
+      /* CSS Cơ bản */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #f4f7f9;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      /* Header với dải màu Gradient */
+      header {
+        background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      header p {
+        margin-top: 10px;
+        font-style: italic;
+        font-size: 14px;
+      }
+
+      /* Thanh điều hướng Navigation */
+      nav {
+        background: white;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #555;
+        padding: 8px 15px;
+        font-size: 14px;
+      }
+
+      nav a.active {
+        background-color: #6a82fb;
+        color: white;
+        border-radius: 5px;
+      }
+
+      /* Nội dung chính */
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background: white;
+        padding: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      }
+
+      section {
+        margin-bottom: 40px;
+      }
+
+      h2 {
+        color: #2c3e50;
+        border-left: 4px solid #6a82fb;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        font-size: 20px;
+      }
+
+      .info p {
+        margin-bottom: 10px;
+      }
+
+      /* Lưới hình ảnh */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: transform 0.3s;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.05);
+      }
+
+      /* Khung Media (Âm thanh & Video) */
+      .media-box {
+        background: #f9faff;
+        border: 1px solid #e1e8ff;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      .media-box h3 {
+        font-size: 16px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+      }
+
+      audio,
+      video {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      .caption {
+        font-size: 13px;
+        color: #777;
+        margin-top: 10px;
+        font-style: italic;
+      }
+
+      /* Footer */
+      footer {
+        background: #232931;
+        color: #ccc;
+        text-align: center;
+        padding: 30px 20px;
+        font-size: 13px;
+      }
+
+      footer a {
+        color: #6a82fb;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>TRƯỜNG THPT CẨM MỸ</h1>
+      <p>Chào mừng bạn đến với trang web của học sinh lớp: 12B1</p>
+    </header>
+
+    <nav>
+      <a href="./index.html">Ngụy Trịnh Thúy Linh</a>
+      <a href="./PHAMNGUYENCHAUKHANH.html">Phạm Nguyên Châu Khanh</a>
+      <a href="./Bai11YL_1.html">Nguyễn Yến Linh</a>
+      <a href="./bai11HE_1.html"> Nguyễn Đỗ Hoàng Anh</a>
+    </nav>
+
+    <div class="container">
+      <section class="info">
+        <h2>Giới thiệu bản thân</h2>
+        <p><strong>Họ tên:</strong> Phạm Nguyễn Châu Khánh</p>
+        <p><strong>Lớp:</strong> 12B1</p>
+        <p>
+          Em là một hệ sinh thái tài năng, luôn tạo nên những tác phẩm mang dấu ấn cá nhân mạnh mẽ và tham gia nhiều cuộc thi mỹ thuật trường học. Định hướng phong cách của em là sự kết hợp giữa tinh
+          tế truyền thống và sự đam mê hiện đại trong nghệ thuật số.
+        </p>
+      </section>
+
+      <section>
+        <h2>Hình ảnh nổi bật</h2>
+        <div class="gallery">
+          <img src="PhamNguyenChauKhanh.jpg/150" alt="Work 1" />
+          <img src="IMG_2572.JPG/150" alt="Work 2" />
+          <img src="IMG_2690.JPG/150" alt="Work 3" />
+          <img src="IMG_2692.JPG/150" alt="Work 4" />
+          <img src="IMG_2899.JPG/150" alt="Work 5" />
+          <img src="1000020514.jpg/150" alt="Work 6" />
+        </div>
+      </section>
+
+      <div class="media-box">
+        <h3>🎧 Âm thanh yêu thích</h3>
+        <audio controls>
+          <source src="Pham-Nguyen-Chau-Khanh.mp3" type="audio/mpeg" />
+          Trình duyệt của bạn không hỗ trợ phát âm thanh.
+        </audio>
+        <p class="caption">Âm thanh em giới thiệu bản thân</p>
+      </div>
+
+      <div class="media-box">
+        <h3>🎥 Video hoạt động</h3>
+        <video controls>
+          <source src="Pham-Nguyen-Chau-Khanh.mp4" type="video/mp4" />
+          Trình duyệt của bạn không hỗ trợ phát video.
+        </video>
+        <p class="caption">Video ghi lại hoạt động giới thiệu bản thân</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 - Thiết kế web sáng tạo bởi PHẠM NGUYỄN CHÂU KHÁNH</p>
+      <p>Liên hệ: <a href="mailto:ckhanh0912@gmail.com">ckhanh0912@gmail.com</a></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12B1 - Trang Cá Nhân Đẳng Cấp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Be+Vietnam+Pro:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --glass: rgba(255, 255, 255, 0.15);
+        --glass-border: rgba(255, 255, 255, 0.25);
+        --text-color: #ffffff;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Be Vietnam Pro", sans-serif;
+      }
+
+      body {
+        /* Nền màu chuyển động mượt mà */
+        background: linear-gradient(-45deg, #23a6d5, #23d5ab, #e73c7e, #ee7752);
+        background-size: 400% 400%;
+        animation: gradientBG 12s ease infinite;
+        min-height: 100vh;
+        padding: 20px;
+        color: var(--text-color);
+      }
+
+      @keyframes gradientBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      /* Khung kính mờ (Glassmorphism) */
+      .glass-card {
+        background: var(--glass);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid var(--glass-border);
+        border-radius: 25px;
+        padding: 40px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        max-width: 1000px;
+        margin: 20px auto;
+      }
+
+      #tieude {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      header.dautrang {
+        text-align: center;
+        padding-bottom: 25px;
+        border-bottom: 1px solid var(--glass-border);
+      }
+
+      header h2 {
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+      }
+
+      /* Menu điều hướng */
+      nav.dieuhuong {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 25px 0;
+        flex-wrap: wrap;
+      }
+
+      nav.dieuhuong a {
+        color: white;
+        text-decoration: none;
+        padding: 12px 15px;
+        border-radius: 50px;
+        background: rgba(255, 255, 255, 0.1);
+        transition: 0.4s;
+        font-weight: 600;
+        border: 1px solid var(--glass-border);
+      }
+
+      nav.dieuhuong a:hover {
+        background: #fff;
+        color: #333;
+        transform: scale(1.1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Nội dung giới thiệu */
+      .thong-tin {
+        margin: 30px 0;
+        line-height: 1.8;
+      }
+
+      .thong-tin h3 {
+        border-left: 4px solid #fff;
+        padding-left: 15px;
+        margin-bottom: 15px;
+        font-size: 1.4rem;
+      }
+
+      /* Bộ sưu tập ảnh */
+      .bo-suu-tap {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+        margin: 30px 0;
+      }
+
+      .bo-suu-tap img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 18px;
+        border: 3px solid transparent;
+        transition: 0.5s;
+      }
+
+      .bo-suu-tap img:hover {
+        transform: translateY(-10px) rotate(2deg);
+        border-color: #fff;
+        cursor: pointer;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Khu vực Đa phương tiện */
+      .khu-vuc-media {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        margin-top: 40px;
+      }
+
+      .media-box {
+        background: rgba(0, 0, 0, 0.15);
+        padding: 25px;
+        border-radius: 20px;
+        text-align: center;
+        border: 1px solid var(--glass-border);
+      }
+
+      .media-box h4 {
+        margin-bottom: 15px;
+      }
+
+      audio,
+      video {
+        width: 100%;
+        border-radius: 12px;
+        outline: none;
+      }
+
+      /* Chân trang */
+      footer.chantrang {
+        text-align: center;
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid var(--glass-border);
+        font-size: 0.9rem;
+        opacity: 0.9;
+      }
+
+      footer a {
+        color: #fff;
+        text-decoration: underline;
+      }
+
+      /* Tối ưu cho di động */
+      @media (max-width: 768px) {
+        .khu-vuc-media {
+          grid-template-columns: 1fr;
+        }
+        #tieude {
+          font-size: 1.8rem;
+        }
+        .glass-card {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="tieude">Thế Giới Sáng Tạo</h1>
+
+    <div class="glass-card">
+      <header class="dautrang">
+        <h2>TRƯỜNG THPT CẨM MỸ</h2>
+        <p>Niên khóa 2023 - 2026 | Tập thể lớp <strong>12B1</strong></p>
+      </header>
+
+      <nav class="dieuhuong">
+        <a href="./index.html">Ngụy Trịnh Thúy Linh</a>
+        <a href="./PHAMNGUYENCHAUKHANH.html">Phạm Nguyên Châu Khanh</a>
+        <a href="./Bai11YL_1.html">Nguyễn Yến Linh</a>
+        <a href="./bai11HE_1.html"> Nguyễn Đỗ Hoàng Anh</a>
+      </nav>
+
+      <main>
+        <section class="thong-tin">
+          <h3>Thông Tin Cá Nhân</h3>
+          <p><strong>Họ và tên:</strong> Nguyễn Yến Linh</p>
+          <p><strong>Chức vụ:</strong> Học sinh lớp 12B1</p>
+          <p><strong>Sở thích:</strong> Lập trình Web, học Tin học và tham gia các hoạt động ngoại khóa đầy năng lượng của trường.</p>
+        </section>
+
+        <section>
+          <h3>Album Thành Viên Tổ</h3>
+          <div class="bo-suu-tap">
+            <img src="hinh1.jpg" alt="Thành viên 1" />
+            <img src="hinh2.jpg" alt="Thành viên 2" />
+            <img src="hinh3.jpg" alt="Thành viên 3" />
+            <img src="hinh4.jpg" alt="Thành viên 4" />
+            <img src="hinh.jpg" alt="Thành viên 5" />
+          </div>
+        </section>
+
+        <section class="khu-vuc-media">
+          <div class="media-box">
+            <h4>Giai Điệu Yêu Thích</h4>
+            <audio src="repeat.mp3" controls></audio>
+          </div>
+          <div class="media-box">
+            <h4>Khoảnh Khắc Lớp Học</h4>
+            <video src="j4.mp4" controls></video>
+          </div>
+        </section>
+      </main>
+
+      <footer class="chantrang">
+        <p>Thiết kế bởi <strong>Nguyễn Yến Linh</strong> - 12B1</p>
+        <p>Email liên hệ: <a href="mailto:example@gmail.com">example@gmail.com</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

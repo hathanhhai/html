@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Web Cá Nhân - 12B1</title>
+    <style>
+      /* Import font từ Google Fonts cho cảm giác hiện đại */
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&family=Quicksand:wght@400;600&display=swap");
+
+      body {
+        background-color: #fdfcf0; /* Màu giấy Washi truyền thống */
+        font-family: "Quicksand", "Noto Sans JP", sans-serif;
+        color: #333;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+      }
+
+      #tieude {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #bc002d; /* Màu đỏ mặt trời Nhật Bản */
+        letter-spacing: 5px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+      }
+
+      .dautrang {
+        background-color: #fff;
+        border-top: 5px solid #bc002d;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        padding: 40px;
+        border-radius: 4px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .dautrang h2 {
+        margin: 0;
+        font-size: 1.8rem;
+        color: #2c3e50;
+      }
+
+      .dieuhuong {
+        background-color: #2c3e50; /* Màu xanh đen sang trọng */
+        padding: 15px;
+        text-align: center;
+        border-radius: 50px;
+        margin: 20px auto;
+        max-width: 156vh;
+      }
+
+      .dieuhuong a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+
+      .dieuhuong a:hover {
+        color: #ffce54;
+      }
+
+      .noidung {
+        background-color: white;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      h3 {
+        border-left: 4px solid #bc002d;
+        padding-left: 15px;
+        color: #2c3e50;
+        margin-top: 30px;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+        border: 1px solid #eee;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.05);
+      }
+
+      .media-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 30px;
+      }
+
+      .amthanh,
+      .video {
+        flex: 1;
+        min-width: 300px;
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 12px;
+      }
+
+      .chantrang {
+        text-align: center;
+        margin-top: 50px;
+        padding: 30px;
+        border-top: 1px dashed #ccc;
+        color: #7f8c8d;
+        font-size: 0.9rem;
+      }
+
+      audio,
+      video {
+        width: 100%;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="tieude">個人用ウェブサイト<br /><span style="font-size: 1rem; color: #666">(Trang Web Cá Nhân)</span></p>
+
+    <div class="dautrang">
+      <h2>TRƯỜNG THPT CẨM MỸ</h2>
+      <p>Chào mừng bạn đến với không gian nhỏ của tập thể lớp <b>12B1</b></p>
+    </div>
+
+    <div class="dieuhuong">
+      <a href="./index.html">Ngụy Trịnh Thúy Linh</a>
+      <a href="./PHAMNGUYENCHAUKHANH.html">Phạm Nguyên Châu Khanh</a>
+      <a href="./Bai11YL_1.html">Nguyễn Yến Linh</a>
+      <a href="./bai11HE_1.html"> Nguyễn Đỗ Hoàng Anh</a>
+    </div>
+
+    <div class="noidung">
+      <h3>Giới thiệu bản thân</h3>
+      <p><strong>Họ và tên:</strong> Nguyễn Đỗ Hoàng Anh</p>
+      <p><em>Lớp chuyên cần: 12B1</em></p>
+      <p>Sở thích: Em có niềm đam mê đặc biệt với môn Tin học và các hoạt động ngoại khóa năng động.</p>
+
+      <h3>Thành viên tổ</h3>
+      <div class="gallery">
+        <img src="hinh1.jpg" alt="Thành viên 1" />
+        <img src="hinh2.jpg" alt="Thành viên 2" />
+        <img src="hinh3.jpg" alt="Thành viên 3" />
+        <img src="hinh4.jpg" alt="Thành viên 4" />
+        <img src="hinh.jpg" alt="Thành viên 5" />
+      </div>
+
+      <div class="media-section">
+        <div class="amthanh">
+          <h3>Âm thanh yêu thích</h3>
+          <audio src="repeat.mp3" controls></audio>
+        </div>
+        <div class="video">
+          <h3>Video hoạt động</h3>
+          <video src="j4.mp4" controls></video>
+        </div>
+      </div>
+    </div>
+
+    <div class="chantrang">
+      <p>© 2026 - Designed with ❤️ by 12B1</p>
+      <p>Liên hệ: <a href="mailto:example@gmail.com" style="color: #bc002d">example@gmail.com</a></p>
+    </div>
+  </body>
+</html>
