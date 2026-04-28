@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thế Giới Số Của Nguyễn Yến Linh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Be+Vietnam+Pro:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        /* Thiết lập nền Galaxy */
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #050510 url('https://images.unsplash.com/photo-1464802686167-b939a6910659?auto=format&fit=crop&q=80&w=2000') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+
+        /* Hiệu ứng khung kính mờ */
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        /* Tiêu đề chính */
+        #tieude {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            color: #fff;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Header phong cách hiện đại */
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        .class-badge {
+            font-size: 40px;
+            font-weight: 900;
+            background: linear-gradient(to bottom, #fff, #aaa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            border: 2px solid rgba(255,255,255,0.3);
+            padding: 10px 20px;
+            border-radius: 15px;
+        }
+
+        /* Thanh điều hướng hình thoi/kim cương */
+        .dieuhuong {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .dieuhuong a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 25px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+            transition: 0.3s;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .dieuhuong a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 15px #23d5ab;
+        }
+
+        /* Bố cục nội dung chính */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        /* Giới thiệu bản thân */
+        .profile-box {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .avatar-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #6e8efb;
+            padding: 5px;
+            box-shadow: 0 0 20px rgba(110, 142, 251, 0.6);
+        }
+
+        .avatar-circle img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* Gallery thành viên */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .member-item {
+            text-align: center;
+            width: 80px;
+        }
+
+        .member-item img {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.4);
+            margin-bottom: 5px;
+        }
+
+        /* Khu vực âm thanh video */
+        .media-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .player-box {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            padding: 15px;
+        }
+
+        /* Chân trang */
+        .chantrang {
+            text-align: center;
+            font-size: 13px;
+            opacity: 0.7;
+            padding: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        h3 {
+            margin-top: 0;
+            font-size: 18px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="tieude">THẾ GIỚI SỐ CỦA PHAN MINH ANH THI</p>
+
+    <div class="glass header-top">
+        <div class="class-badge">12B1</div>
+        <div>
+            <h2>TRƯỜNG THPT CẨM MỸ</h2>
+            <p>Chào mừng bạn đến với trang web của học sinh: Lớp 12B1</p>
+        </div>
+        <div style="font-size: 30px;">🔭 📖</div>
+    </div>
+
+    <div class="dieuhuong">
+        <a href="#">TRANG CHỦ 🏠</a>
+        <a href="#">GIỚI THIỆU 🧩</a>
+        <a href="#">HỌC TẬP 🛰️</a>
+        <a href="#">LIÊN HỆ 📩</a>
+    </div>
+
+    <div class="main-content">
+        <div class="glass">
+            <h3>Giới Thiệu Bản Thân</h3>
+            <div class="profile-box">
+                <div class="avatar-circle">
+                    <img src="hinh_ca_nhan.jpg" alt="Avatar">
+                </div>
+                <div>
+                    <p><strong>HỌ TÊN:</strong> Phan Minh Anh Thi</p>
+                    <p><strong>LỚP:</strong> 12B1</p>
+                    <p><strong>SỞ THÍCH:</strong> Học Tin học, Tham gia hoạt động ngoại khóa</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass">
+            <h3>HÌNH ẢNH THÀNH VIÊN</h3>
+            <div class="gallery">
+                <div class="member-item"><img src="hinh1.jpg" alt="1"><br><small>MaMmm</small></div>
+                <div class="member-item"><img src="hinh2.jpg" alt="2"><br><small>Zootopia</small></div>
+                <div class="member-item"><img src="hinh3.jpg" alt="3"><br><small>Shin</small></div>
+                <div class="member-item"><img src="hinh4.jpg" alt="4"><br><small>Mickey</small></div>
+                <div class="member-item"><img src="hinh.jpg" alt="5"><br><small>Micke</small></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="media-section">
+        <div class="glass player-box">
+            <h3>Giai Điệu Yêu Thích 🎵</h3>
+            <p style="font-size: 14px;">repeat.mp3</p>
+            <audio src="repeat.mp3" controls style="width: 100%;"></audio>
+        </div>
+        <div class="glass player-box">
+            <h3>Hoạt Động Lớp 📺</h3>
+            <video src="j4.mp4" controls style="width: 100%; height: 150px; border-radius: 10px;"></video>
+        </div>
+    </div>
+
+    <div class="chantrang">
+        <p>© 2026 - TRANG WEB CÁ NHÂN | THIẾT KẾ CƠ BẢN</p>
+        <p>LIÊN HỆ: example@gmail.com</p>
+    </div>
+
+</body>
+</html>
